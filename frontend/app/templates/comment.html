@@ -1,0 +1,62 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-10">
+            <div class="row">
+                <div class="col-sm-12">
+                    <form class="form-group">
+                        <textarea ng-model="comment.body" class="form-control" placeholder="Enter your comments">
+
+                        </textarea>
+                        <br>
+                        <button ng-click="addComment()" ng-disabled="comment.body==''" class="btn btn-primary float-right">
+                            Add Comment
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br/>
+    <div class="comment-list">
+        <div ng-repeat="singleComment in allComments" class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-10">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-sm-1">
+                                <div>
+                                    {{$index+1}}.
+                                </div>
+                            </div>
+                            <div class="col-sm-8">
+                                <div class="card-title">
+                                    <strong>{{singleComment.userDetails.name}}</strong>
+                                </div>
+                                <div class="card-text">
+                                    {{singleComment.body}}
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div>
+                                    <i style="color: forestgreen; cursor: pointer" class="fas fa-thumbs-up"
+                                       ng-click="upvote(singleComment)">
+                                    </i>&nbsp;  upvotes {{singleComment.upvote}}
+                                </div>
+                                <div>
+                                    <i style="color: red; cursor: pointer" class="fas fa-thumbs-down"
+                                       ng-click="downvote(singleComment)">
+                                    </i>&nbsp; downvotes {{singleComment.downvote}}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--<div class="card-header">-->
+                    <!--{{singleComment}}-->
+                <!--</div>-->
+            </div>
+        </div>
+    </div>
+</div>

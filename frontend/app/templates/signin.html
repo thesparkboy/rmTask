@@ -1,0 +1,38 @@
+<div class="row">
+    <div class="col-sm-4"></div>
+    <div class="col-sm-4">
+        <form name="myForm" class="form-group card component-form" novalidate>
+            <div class="row">
+                <div class="col-sm-12" class="form-header">
+                    <h5>Login</h5>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-sm-12">
+                    <label>Email</label>
+                    <input name="email" required="" type="email" class="form-control" placeholder="Email"
+                           ng-model="user.email">
+                    <div ng-show="myForm.email.$dirty">
+                        <span ng-show="myForm.email.$error.required" style="color: red">Enter mail</span>
+                    </div>
+                    <hr>
+                </div>
+                <div class="col-sm-12">
+                    <label>User Password</label>
+                    <input name="password" required="" type="password" class="form-control" placeholder="Password"
+                           ng-model="user.password">
+                    <div ng-show="myForm.password.$dirty">
+                        <span ng-show="myForm.password.$error.required" style="color: red">Enter password</span>
+                    </div>
+                    <hr>
+                </div>
+                <div class="col-sm-12">
+                    <button class="btn btn-primary" ng-click="login()"ng-disabled="myForm.$invalid">
+                        submit
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

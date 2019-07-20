@@ -1,0 +1,53 @@
+<html>
+<head>
+    <title>Task</title>
+    <!--cdn and node modules-->
+
+    <script src="./node_modules/angular/angular.min.js"></script>
+    <script src="./node_modules/ui-bootstrap4/dist/ui-bootstrap-tpls.js"></script>
+    <script src="node_modules/angular-animate/angular-animate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.22/angular-ui-router.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
+    <script src="app/controllers/growl-alternative.js"></script>
+
+    <!--<script src="./app/config.js"></script>-->
+    <script src="app/app.js"></script>
+
+    <!--controllers-->
+    <script src="app/controllers/comment.js"></script>
+    <script src="app/controllers/userRegister.js"></script>
+
+    <!--services-->
+    <script src="app/services/commentService.js"></script>
+    <script src="app/services/userService.js"></script>
+
+    <link rel="stylesheet" href="./app/stylesheets/main.css">
+
+    <base href="/">
+</head>
+
+<body ng-app="myApp" ng-controller="mainCtrl">
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" ui-sref="signIn" ng-if="!containsUser">Signin</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" ui-sref="signUp" ng-if="!containsUser">Signup</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item" style="cursor: pointer" ng-if="containsUser">
+                    <a class="nav-link" ng-click="logout()">logout</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div ui-view></div>
+</body>
+</html>

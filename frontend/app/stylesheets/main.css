@@ -1,0 +1,260 @@
+h5, label, th, td, input, option, select, button, li, p, h6 {
+    font-family: Roboto ;
+}
+
+.component-form {
+    padding: 16px;
+    border-radius: 1.5em;
+}
+
+select {
+    text-align-last: center;
+}
+
+.edit-icon{
+    color: lawngreen;
+    cursor: pointer;
+}
+
+.delete-icon {
+    color:  red;
+    cursor: pointer;
+}
+
+label {
+    color: grey;
+}
+
+.modal-content {
+    width: 85%;
+}
+
+.filter {
+    margin-bottom: 1.5em;
+}
+
+.component-form input.ng-invalid.ng-dirty {
+    border-color: #FA787E;
+}
+
+.component-form input.ng-valid.ng-dirty {
+    border-color: #78FA89;
+}
+
+.designation-body {
+    text-align: center;
+}
+.designation-header {
+    text-align: center;
+}
+
+.dropdown.open .dropdown-menu {
+    display: block;
+}
+
+/*.dropdown-menu {*/
+/*text-align: center;*/
+/*margin-bottom: 1px;*/
+/*border: 1px solid lavenderblush;*/
+/*box-shadow: 0 6px 12px rgba(0,0,0,.175);*/
+/*overflow-y: scroll;*/
+/*height: 10em;*/
+/*}*/
+
+.dropdown-menu a{
+    color: #262626;
+    text-decoration: none;
+}
+.dropdown-menu li:hover{
+    background: red;
+    background-color: #f5f5f5;
+    text-decoration: none;
+}
+.dropdown-menu li {
+    size: 9px;
+}
+
+.indexing {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.dropdown-menu .divider {
+    height: 1px;
+    margin: 9px 0;
+    overflow: hidden;
+    background-color: #e5e5e5;
+}
+.delete-row {
+    margin-top: auto;
+    margin-bottom: auto;
+    cursor: pointer;
+    color: red
+}
+.designation-list {
+    margin-top: 2em;
+    text-align: center;
+    padding: 1em;
+}
+
+.component-list {
+    display: inline-block;
+    border: 1px solid burlywood;
+    padding: 7px;
+    border-radius: 7px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.menu-item {
+    cursor: pointer;
+}
+.btn-warning {
+    color: white;
+}
+
+.btn-warning:hover {
+    color: white;
+}
+.btn-warning.disabled {
+    color: white
+}
+
+.allowance {
+    background: mediumspringgreen;
+}
+
+.shift-time {
+    text-align: center;
+}
+
+.reduction {
+    background: lightskyblue;
+}
+
+nav {
+    margin-bottom: 2em;
+}
+
+.working-shifts {
+    padding: 1em;
+}
+
+.fade.in {
+    opacity: 1;
+}
+
+.modal.in .modal-dialog {
+    -webkit-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
+}
+
+.modal-backdrop.in {
+    filter: alpha(opacity=50);
+    opacity: .5;
+}
+
+.table-content {
+    height: 29em;
+    overflow-y: scroll;
+    display: block;
+}
+
+.employee-registration {
+    width: 35%;
+}
+
+.employee-details {
+    padding: 1em;
+    margin-top: 1em;
+    overflow-x: auto;
+}
+
+.popover-content {
+    padding: 9px 14px;
+}
+
+.arrow {
+    top: -11px;
+    right: 6px;
+}
+
+.popover.bottom>.arrow {
+    top: -11px;
+    left: 50%;
+    margin-left: -11px;
+    border-top-width: 0;
+    border-bottom-color: #999;
+    /* border-bottom-color: rgba(0,0,0,.25); */
+}
+
+.popover>.arrow {
+    border-width: 11px;
+}
+
+.popover>.arrow, .popover>.arrow:after {
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+}
+
+.nav-link:focus {
+    color: lawngreen !important;
+}
+
+.nav-link:hover {
+    color: white !important;
+}
+
+.full button span {
+    background-color: limegreen;
+    border-radius: 32px;
+    color: black;
+}
+.partially button span {
+    background-color: orange;
+    border-radius: 32px;
+    color: black;
+}
+
+.table-item {
+    padding-top: 1.4em !important;
+}
+
+.modal-dialog {
+    max-width:25em;
+}
+
+.employee-info {
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+}
+
+.emp-name {
+    color: blue !important;
+    text-decoration: underline !important;
+    cursor: pointer !important;
+}
+
+.sortorder:after {
+    content: '\25b2';
+}
+
+.sortorder.reverse:after {
+    content: '\25bc';
+}
+
+.beeperNub {
+    background: white;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: 0 -1195px;
+    height: 11px;
+    position: absolute;
+    top: -11px;
+    width: 20px;
+    right: 0.5em;
+}
