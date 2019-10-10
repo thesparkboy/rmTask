@@ -14,15 +14,6 @@ Step-3: After successful installation of ```npm``` and ```node```, user needs to
   },```<br />
  In your working directory open ```cmd``` and write: ```npm install -S body-parser ejs express mongoose``` <br />
  Step-4: write ```node app.js``` in ```cmd``` of your working directory. 
- 
-# List of Tools and Technology used
-1. JavaScript <br />
-2. jQuery <br />
-3. MongoDB <br />
-4. Express Framework <br />
-5. HTML <br />
-6. Bootstrap <br />
-7. Font Awesome API <br />
 
 # Directory Structure
 ```
