@@ -1,11 +1,16 @@
-var express 		= require("express");
-var bodyparser  	= require("body-parser");
-var mongoose		= require("mongoose");
-var path 			= require('path');
-var cookieParser 	= require('cookie-parser');
-var logger 			= require('morgan');
-var app 			= express();
+const express 		= require("express");
+const bodyparser  	= require("body-parser");
+const mongoose		= require("mongoose");
+const path 		= require('path');
+const cookieParser 	= require('cookie-parser');
+const logger 		= require('morgan');
+const app 		= express();
 require('./passport');
+
+const PORT = 3000;
+const SERVER_UP_MESSAGE = "server is running at 3000";
+const INDEX_FILE_PATH = '/frontend/index.html';
+
 
 var routes = require('./routes/route');
 
@@ -21,9 +26,9 @@ app.use(express.static(path.join(__dirname, 'frontend')));
 app.use('/', routes);
 
 app.get('*', function(req, res) {
-    res.sendFile(__dirname+'/frontend/index.html');
+    res.sendFile(__dirname+INDEX_FILE_PATH);
 })
 
-app.listen(3000, function(req, res) {
-	console.log('server is running at 3000');
+app.listen(PORT, function(req, res) {
+	console.log(SERVER_UP_MESSAGE);
 });
